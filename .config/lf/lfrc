@@ -1,0 +1,13 @@
+map R rename
+map r reload
+
+set drawbox
+set hidden
+set icons
+set incfilter
+set incsearch
+set mouse
+set number
+set relativenumber
+set previewer ~/.config/lf/lf_kitty_preview
+set cleaner ~/.config/lf/lf_kitty_clean
