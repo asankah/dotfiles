@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Executes lf with options set up to show pretty icons.
+# Needs a terminal font which supports dev icons.
+
 export LF_ICONS="\
 tw=:\
 st=:\
