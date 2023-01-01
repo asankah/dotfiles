@@ -10,4 +10,14 @@ if [[ "$( file -Lb --mime-type "$file")" =~ ^image ]]; then
     exit 1
 fi
 
-cat "$file"
+if [[ "$file" =~ ".*\.json" ]]; then
+  exec jq -C . "$file"
+  exit 0
+fi
+
+if [[ "$file" =~ ".*\.pdf$" ]]; then
+  exec command less "$file"
+  exit 0
+fi
+
+exec bat --style=plain --color=always --paging=never --terminal-width=$w --wrap=auto "$file"
