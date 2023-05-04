@@ -1,0 +1,35 @@
+#!/bin/env bash
+
+function is_hg (
+  while [[ $PWD != "/" ]]; do
+    test -d .hg && break
+    cd ..
+  done
+  [[ -d .hg ]]
+  exit $?
+)
+
+function is_git (
+  while [[ $PWD != "/" ]]; do
+    test -d .git && break
+    cd ..
+  done
+  [[ -d .git ]]
+  exit $?
+)
+
+if is_git; then
+  if [[ $(git cat-file -t origin/main >&2) == commit ]]; then
+    git log origin/main.. "$@"
+  else
+    git log @{u} "$@"
+  fi
+elif is_hg; then
+  hg al "$@"
+else
+  echo not in a source dir
+fi
+
+
+
+
