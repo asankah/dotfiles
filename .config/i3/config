@@ -88,7 +88,7 @@ bindsym $mod+s layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# chang  focus between tiling / floating windows
+# change  focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
@@ -100,8 +100,8 @@ bindsym $mod+c focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1: mail and chat"
-set $ws2 "2: terminals"
+set $ws1 "1: Mail and chat"
+set $ws2 "2: Terminals"
 set $ws3 "3: Cider"
 set $ws4 "4: Personal"
 set $ws5 "5"
