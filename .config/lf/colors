@@ -42,7 +42,7 @@
 
 # file types (with matching order)
 ln      01;36   # LINK
-or      31;01   # ORPHAN
+or      97;01;41   # ORPHAN
 tw      34      # STICKY_OTHER_WRITABLE
 ow      34      # OTHER_WRITABLE
 st      01;34   # STICKY
@@ -57,26 +57,26 @@ ex      01;32   # EXEC
 fi      00      # FILE
 
 # Various Google3
-*.py    38;5;087
-*.rs    38;5;075
-*.cc    38;5;104
-*.h     38;5;104
-*.ts    38;5;226
-*.js    38;5;226
-*.html  38;5;170
-*.proto  38;5;170
-*BUILD   38;5;217
-*LICENSE   38;5;217
-*METADATA   38;5;217
-*.blueprint   38;5;063
-*bluze.textproto   38;5;063
-*.gcl   38;5;211
-*.json   38;5;211
-*.textproto   38;5;211
-*.yaml  38;5;211
-*.pi    38;5;211
-*.css   38;5;202
-*.scss  38;5;202
+*.py    38;5;14
+*.rs    01;38;5;6
+*.cc    01;38;5;5
+*.h     38;5;5
+*.ts    38;5;11
+*.js    38;5;11
+*.html  38;5;3
+*.proto  38;5;8
+*BUILD   01;38;5;13
+*LICENSE   38;5;13
+*METADATA   38;5;13
+*.blueprint   38;5;13
+*bluze.textproto   38;5;13
+*.gcl   38;5;6
+*.json   38;5;6
+*.textproto   38;5;6
+*.yaml  38;5;6
+*.pi    38;5;6
+*.css   01;38;5;5
+*.scss  01;38;5;5
 
 # archives or compressed (dircolors defaults)
 *.tar   01;31
