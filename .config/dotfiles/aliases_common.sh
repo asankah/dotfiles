@@ -14,5 +14,5 @@ alias gud="vcs-upstream-diff"
 alias gup="vcs-upstream-fetch"
 alias st="vcs-status"
 alias gm="vcs-xl"
-
+alias gca="vcs-amend"
 
